@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Listado Factura";
+}
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+                <div class="form-group">
+                    <label for="input_NumeroFactura">N° Factura: </label>
+                    <div class="input-group">
+                        <input type="text" class="k-input" id="input_NumeroFactura" style="width: 70%;" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+                <div class="form-group">
+                    <label for="combobox_Cliente">Cliente: </label>
+                    <div class="input-group">
+                        <select id="combobox_Cliente" style="width: 100%;"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12" style=" position: relative;">
+                <button type="button" id="button_Buscar" class="k-button" style="margin: 0;position: absolute;top: 50%;transform: translateY(-50%);">
+                    <span>Buscar</span>
+                </button>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="grid_Facturas"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/funcionales/home/vistaconsultarfacturas.js" asp-append-version="true"></script>

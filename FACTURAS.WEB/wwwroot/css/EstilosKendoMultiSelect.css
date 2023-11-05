@@ -1,0 +1,140 @@
+﻿.k-multiselect li.k-button, .k-multiselect li.k-button:before {
+    background-color: #8cdde4;
+}
+
+html .k-multiselect .k-floatwrap ul li {
+    margin-left: 0,10rem !important;
+}
+
+html .k-multiselect li.k-button {
+    border-left-color: #01bbbb;
+}
+
+.k-multiselect li.k-button {
+    border-top-color: #01bbbb;
+    /*cursor: default;*/
+    height: calc(2.9999rem - .9999rem + .2999rem);
+}
+
+html .k-multiselect li {
+    border-left: 1px solid transparent;
+    border-top-left-radius: 5px;
+}
+
+.k-multiselect li, .k-multiselect .k-select li span {
+    color: var(--tabClr) !important;
+}
+
+.k-multiselect li {
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: calc(2.8125rem - .9375rem);
+    line-height: calc(3.100rem - .9999rem);
+    max-width: 11.1875rem;
+    padding: 0 .625rem 0 .625rem;
+    position: relative;
+    vertical-align: top;
+}
+
+
+html .k-multiselect li.k-button::before {
+    border-right-color: #01bbbb !important;
+}
+
+.k-multiselect li.k-button::before {
+    border-top-color: #01bbbb !important;
+}
+
+html .k-multiselect li::before {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid transparent;
+    margin-right: -1px;
+    right: -0.10rem;
+    height: 21px;
+    /*transform: skewX( 18deg );*/
+}
+
+.k-multiselect li::before {
+    border-top: 1px solid transparent;
+    content: " ";
+    display: block;
+    height: calc(2.8125rem - .9375rem + .0625rem);
+    position: absolute;
+    top: -1px;
+    width: calc(.9375rem + .0625rem);
+}
+
+.k-multiselect li.k-button > span {
+    color: #000;
+}
+
+html .k-multiselect li > span::before {
+    margin-right: -1px;
+    right: 0;
+}
+
+.k-multiselect li.k-button span, .k-multiselect li.k-button > span {
+    color: #000;
+}
+
+    .k-multiselect li.k-button span.k-i-close, .k-multiselect span.k-i-close {
+        opacity: 1;
+        top: 6px;
+        right: 0px;
+    }
+
+html .k-multiselect li span.k-i-close {
+    right: -.25rem;
+}
+
+.k-multiselect li span.k-i-close {
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+    margin-top: -.4375rem;
+    opacity: .5;
+    /*padding: .09375rem .09375rem .0625rem .0625rem;*/
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    /*transition: all .2s linear;*/
+}
+
+html .k-multiselect li.k-button > span:not(.k-select)::before {
+    background: -moz-linear-gradient(right,#fff 0,#fff 20%,rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(right,rgb(136 220 227) 0,rgb(134 219 227) 20%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to left,rgb(140 221 228) 0,rgb(142 221 228) 20%,rgba(255,255,255,0) 100%);
+}
+
+html .k-multiselect li > span:not(.k-select)::before {
+    margin-right: -1px;
+    right: 0;
+    height: 20px;
+    margin-bottom: 1px;
+}
+
+.k-multiselect li > span:not(.k-select)::before {
+    bottom: 0;
+    content: '';
+    height: calc(2.8125rem - .9375rem);
+    position: absolute;
+    width: 1.9375rem;
+}
+
+.k-multiselect li.k-button > span:not(.k-select) {
+    color: #000;
+    display: inline-block;
+    /*font-size: 0.9000rem;*/
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    transition: opacity .2s linear;
+}
+
+.zmTtab li:not(.activeTab), .zmTtab li:not(.activeTab):before {
+    background-color: var(--tabBG);
+}
